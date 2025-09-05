@@ -71,23 +71,23 @@ export default function StickFigure() {
         {/* Shin */}
         <motion.g
           animate={{ rotate: [10, -15, 10] }} // bend at knee
-          transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
+          //transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
           style={{ originX: 0, originY: 0 }}
           transform="translate(-20,50)" // knee pivot
         >
-          <line x1="110" y1="210" x2="100" y2="240" stroke="black" strokeWidth="5" />
+          <line x1="110" y1="210" x2="100" y2="275" stroke="black" strokeWidth="5" />
         </motion.g>
       </motion.g>
 
       {/* === RIGHT LEG (Hip → Knee → Foot) === */}
       <motion.g
         animate={{ rotate: [-25, 25, -25] }} // opposite swing to left leg
-        transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
+        //transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
         style={{ originX: 0, originY: 0 }}
         transform="translate(100,180)" // hip pivot
       >
         {/* Thigh */}
-        <line x1="0" y1="0" x2="20" y2="50" stroke="black" strokeWidth="5" />
+        <line x1="100" y1="180" x2="110" y2="210" stroke="black" strokeWidth="5" />
 
         {/* Shin */}
         <motion.g
@@ -96,7 +96,7 @@ export default function StickFigure() {
           style={{ originX: 0, originY: 0 }}
           transform="translate(20,50)" // knee pivot
         >
-          <line x1="0" y1="0" x2="10" y2="50" stroke="black" strokeWidth="5" />
+          <line x1="110" y1="210" x2="100" y2="275" stroke="black" strokeWidth="5" />
         </motion.g>
       </motion.g>
     </svg>
